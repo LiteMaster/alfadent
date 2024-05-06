@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "Rubik-Black";
+    src: url("font/Black.ttf");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Rubik-Medium";
+    src: url("font/Medium.ttf");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Rubik-Regular";
+    src: url("font/Regular.ttf");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Rubik-Light";
+    src: url("font/Light.ttf");
+    font-style: normal;
+}
+
+*{
+    font-family: Rubik-Regular;
+}
+
+body{
+    font-size: 16px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: Rubik-Medium;
+    font-weight: inherit;
+}
+
+.noStyle{
+    border-left-style: none;
+    text-decoration: none;
+    color: inherit;
+    padding: 0px;
+    margin: 0px;
+}
+
+.flexBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.container{
+    width: 1400px;
+}
