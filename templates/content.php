@@ -2,11 +2,11 @@
     <div class="slide flexBlock">
         <div class="container flexBlock flexBetween">
             <div class="content">
+                <p class="title">Альфадент</p>
                 <div>
-                    <p class="title">Альфадент</p>
                     <p class="titleText"> комплексно и профессионально подходит к лечению</p>
                 </div>
-                <div class="flexBlock flexBetween">
+                <div class="textInfo flexBlock flexBetween">
                     <p class="slideText">Нам доверяют более 25 лет</p>
                     <button class="button">Записаться на прием</button>
                 </div>
