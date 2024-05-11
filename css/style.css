@@ -31,8 +31,8 @@
     line-height: 110%;
 }
 
-body{
-    padding-top:100px;
+body {
+    padding-top: 100px;
 }
 
 a {
@@ -68,6 +68,10 @@ p {
     font-family: Rubik-Regular;
 }
 
+img{
+    pointer-events: none;
+}
+
 .noStyle {
     border-left-style: none;
     text-decoration: none;
@@ -93,7 +97,7 @@ p {
     justify-content: flex-start;
 }
 
-.flexBetween{
+.flexBetween {
     justify-content: space-between;
 }
 
@@ -145,7 +149,7 @@ p {
 }
 
 .dark .button:hover,
-.button.light:hover{
+.button.light:hover {
     background: #008bd0;
     color: #ffffff;
 }
@@ -327,6 +331,7 @@ p {
     width: 100%;
     top: 0px;
 }
+
 .containerHeader {
     width: 100%;
 }
@@ -336,7 +341,7 @@ p {
 }
 
 
-.header img{
+.header img {
     width: 80px;
     margin: 8px 0px;
 }
@@ -372,7 +377,7 @@ p.logoText {
 
 /*Блок 1*/
 
-.mainBlock{
+.mainBlock {
     width: 100%;
     height: 50vh;
     background: url("../images/bg-image.png");
@@ -400,7 +405,7 @@ p.logoText {
     width: 100%;
 }
 
-.slide .title{
+.slide .title {
     font-size: 60px;
     font-family: Rubik-Medium;
 }
@@ -410,7 +415,7 @@ p.logoText {
     color: #9bd5ff;
 }
 
-.slide .slideText{
+.slide .slideText {
     font-size: 24px;
 }
 
@@ -421,6 +426,7 @@ p.logoText {
     padding: 20px;
     border: 1px solid #72add7;
 }
+
 .snipets h3 {
     font-size: 24px;
     margin-bottom: 8px;
@@ -429,4 +435,130 @@ p.logoText {
 
 .listBlock {
     align-items: stretch;
+}
+
+
+/*История компаниие*/
+.company {
+    justify-content: left;
+    text-align: left;
+    gap: 20px;
+}
+
+.companyInfo {
+    padding: 0px 0;
+    width: 50%;
+}
+
+.companyInfo p {
+    margin: 8px 0px;
+    color: #003e81;
+}
+
+
+.companyMedia {
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slidePhoto {
+    width: 100%;
+    position: relative;
+}
+
+.slidePhoto img{
+    width: auto;
+    position: absolute;
+    height: 400px;
+}
+
+.slideGallery {
+    width: 0;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    transition: 0.6s;
+    overflow: hidden;
+}
+.slideGallery.active {
+    width: 100%;
+}
+
+.companyContent {
+    align-items: stretch;
+    width: 100%;
+}
+
+.slideTitle {
+    position: absolute;
+    border-bottom: 20px;
+    background: #3771bd;
+    bottom: 0px;
+    width: 100%;
+    min-width: max-content;
+    height: 60px;
+    display: flex;
+    padding: 0 40px;
+    color: #fff;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.slideTitle p{
+    width: max-content;
+    font-size: 20px;
+}
+
+.slidersGalery {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 400px;
+    background: #3771bd;
+}
+
+
+
+.slidersGalery .arrow {
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 60px;
+    background: #3771bd;
+    position: absolute;
+    right: 0px;
+    z-index: 1;
+    bottom: 0px;
+    transition:0.3s;
+    cursor: pointer;
+}
+.slidersGalery .arrow:hover {
+    background: #72add7;
+}
+
+.slidersGalery .arrow.left{
+    left: 0px;
+    transform: rotate(180deg);
+}
+.slidersGalery .arrow:after,
+.slidersGalery .arrow:before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 23px;
+}
+.slidersGalery .arrow:before {
+    transform: rotate(-45deg);
+    top: 36px;
 }
