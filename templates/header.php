@@ -65,7 +65,6 @@
                     <div class="phone">+7 (8422) 44-56-56</div>
                 </div>
             </div>
-
             <button class="button black">Срочная запись</button>
         </div>
     </div>
